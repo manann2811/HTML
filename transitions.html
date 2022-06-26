@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #t1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s;
+    }
+    #t1:hover{
+        width: 300px;
+    }
+    #t2{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s;
+        transition-timing-function: linear;
+    }
+    #t2:hover{
+        width: 300px;
+    }
+    #t3{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s;
+        transition-timing-function: ease-in;
+    }
+    #t3:hover{
+        width: 300px;
+    }
+    #t4{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s;
+        transition-timing-function: cubic-bezier(0.075, 1, 0.5, 2);
+    }
+    #t4:hover{
+        width: 300px;
+    }
+    #t5{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s;
+    }
+    #t5:hover{
+        width: 300px;
+    }
+    #t6{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s, transform 2s, height 2s;
+        transition-timing-function: ease-in;
+    }
+    #t6:hover{
+        width: 300px;
+        height: 300px;
+        transform: rotate(180deg);
+    }
+</style>
+<head>
+<body>
+    <div id="t1">Default</div><br>
+    <div id="t2">Linear</div><br>
+    <div id="t3">Ease-in</div><br>
+    <div id="t4">Cubic-bezier</div><br>
+    <div id="t5">Time delay</div><br>
+    <div id="t6">Rotate</div><br>
+    <p>Extra text...</p>
+    <p>Extra text...</p>
+    <p>Extra text...</p>
+    <p>Extra text...</p>
+    <p>Extra text...</p>
+    <p>Extra text...</p>
+    <p>Extra text...</p>
+</body>
+</html>

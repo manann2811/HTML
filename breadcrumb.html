@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .pagination ul{
+        list-style-type: none;
+        background-color: rgb(202, 200, 200);
+        overflow: hidden;
+        padding: 14px 12px;
+    }
+    .pagination a{
+        color: green;
+    }
+    .pagination li{
+       display: inline;
+    }
+    .pagination li+li::before{
+        content: "/\00A0";
+        padding: 8px;
+    }
+</style>
+<head>
+<body>
+    <div class="pagination">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+    </ul>
+    </div>
+</body>
+</html>

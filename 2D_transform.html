@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .translate{
+        border: 1px solid black;
+        width: 300px;
+        transform: translate(50px, 50px);
+        background-color: yellow;
+    }
+    .translate_-ve{
+        border: 1px solid black;
+        width: 300px;
+        transform: translate(-5px, -25px);
+        background-color: yellow;
+    }
+    .rotate{
+        border: 1px solid black;
+        width: 300px;
+        transform: rotate(20deg);
+        background-color: yellow;
+    }
+    .rotate_-ve{
+        border: 1px solid black;
+        width: 300px;
+        transform: rotate(-20deg);
+        background-color: yellow;
+    }
+    .scale_x{
+        border: 1px solid black;
+        width: 300px;
+        transform: scaleX(2);
+        background-color: yellow;
+        margin-left: 150px;
+    }
+    .scale_y{
+        border: 1px solid black;
+        width: 300px;
+        transform: scaleY(2);
+        background-color: yellow;
+    }
+    .scale_both{
+        border: 1px solid black;
+        width: 300px;
+        transform: scale(2, 3);
+        background-color: yellow;
+        margin-left: 150px;
+    }
+    .skew_x{
+        border: 1px solid black;
+        width: 300px;
+        transform: skewX(20deg);
+        background-color: yellow;
+    }
+    .skew_y{
+        border: 1px solid black;
+        width: 300px;
+        transform: skewY(20deg);
+        background-color: yellow;
+    }
+    .skew_both{
+        border: 1px solid black;
+        width: 300px;
+        transform: skew(20deg, 20deg);
+        background-color: yellow;
+    }
+    .matrix{
+        border: 1px solid black;
+        width: 300px;
+        background-color: yellow;
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+    }
+</style>
+<head>
+<body>
+    <h3>Translate</h3>
+    <div class="translate">
+        Tranform : translate(50px, 50px)
+    </div>
+    <div class="translate_-ve">
+        Tranform : translate(-5px, -25px)
+    </div><br><br><br>
+    <h3>Rotate</h3>
+    <br><br><br>
+    <div class="rotate">
+        Tranform : Rotate(20deg)
+    </div>
+    <br><br><br>
+    <div class="rotate_-ve">
+        Tranform : Rotate(-20deg)
+    </div><br><br><br>
+    <h3>Scale</h3>
+    <div class="scale_x">
+        Tranform : ScaleX(2)
+    </div>
+    <br><br><br>
+    <div class="scale_y">
+        Tranform : ScaleY(2)
+    </div>
+    <br><br><br>
+    <div class="scale_both">
+        Tranform : ScaleY(2, 3)
+    </div>
+    <br><br><br>
+    <h3>Skew</h3>
+    <div class="skew_x">
+        Tranform : SkewX(20deg)
+    </div>
+    <br><br><br><br>
+    <div class="skew_y">
+        Tranform : SkewY(20deg)
+    </div>
+    <br><br><br><br>
+    <div class="skew_both">
+        Tranform : Skew(20deg, 20deg)
+    </div>
+    <!-- matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) -->
+    <br><br>
+    <h3>Matrix</h3>
+    <br><br><br><br>
+    <div class="matrix">
+        Tranform : Matrix(1, -0.3, 0, 1, 0, 0)
+    </div>
+</body>
+</html>

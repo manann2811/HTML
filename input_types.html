@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form id="form1">
+    <button type="button" onclick="alert('Hello User')">Click Me!</button><br><br>
+    <label for="fname">Enter first name: </label>
+    <input type="text" id="fname" name="fname" maxlength="22" autofocus required><br><br>
+<fieldset>
+    <legend>Favourite Cars</legend>
+    <input type="checkbox" id="ferrari" name="cars" value="Ferrari" checked>
+    <label for="ferrari">Ferrari</label><br>
+    <input type="checkbox" id="bmw" name="cars" value="bmw">
+    <label for="bmw">BMW</label><br>
+    <input type="checkbox" id="Porshe" name="cars" value="Porshe">
+    <label for="Porshe">Porshe</label><br>
+    <input type="checkbox" id="Mercedes" name="cars" value="Mercedes">
+    <label for="Mercedes">Mercedes</label><br>
+</fieldset>
+<label for="color">Favourite Colour : </label>
+<input type="color" id="color" name="color" value="#ff1100">
+<br><br>
+<label for="bday">Birthday: </label>
+<input type="date" id="bday" name="bday">
+<br><br>
+<label for="bday_time">Birth-time: </label>
+<input type="datetime-local" id="bday_time" name="bday_time">
+<br><br>
+<label for="email">Enter your email: </label>
+<input type="email" id="email" name="email" value="example@gmail.com" readonly size="25">
+<br><br>
+<label for="file">Select a file: </label>
+<input type="file" name="file" id="file">
+<br><br>
+<input type="hidden" name="hidden" value="It's Hidden!">
+<label for="month">Enter a month: </label>
+<input type="month" id="month" name="month">
+<br><br>
+<label for="num">Enter a number (between 10 and 50):</label>
+<input type="number" id="num" name="number" min="10" max="50" step="10">
+<br><br>
+<label for="num">(Disabled) Enter a number (between 1 and 5):</label>
+<input type="number" id="num" name="number" min="1" max="5" disabled>
+<br><br>
+<label for="phone">Enter phone number: </label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678">
+<br></br>
+<label for="vol">Volume (between 0 to 50):</label>
+<input type="range" id="vol" name="vol" min="0" max="50" step="10">
+<br><br>
+<label for="username">Username: </label><br>
+<input type="text" id="username" name="username"><br>
+<label for="pass">Password: </label><br>
+<input type="password" id="pass" name="password">
+<br><br>
+<label for="time">Enter the time: </label>
+<input type="time" id="time" name="time">
+<br><br>
+<label for="url">Enter the url: </label>
+<input type="url" id="url" name="url">
+<br><br>
+<label for="week">Enter a week: </label>
+<input type="week" id="week" name="week">
+<br><br>
+<input type="image" src="https://e7.pngegg.com/pngimages/278/823/png-clipart-computer-icons-button-green-submit-button-text-trademark-thumbnail.png" alt="Submit" height="60px" width="60px"><br><br>
+<input type="submit" value="Submit">
+<input type="submit" formaction="/action.php" value="Submit as Admin">
+<input type="submit" formenctype="multipart/form-data" value="Submit as multipart/form-data">
+<input type="submit" formmethod="post" value="Submit using post method">
+<input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+<input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+<input type="reset" value="Reset">
+</form>
+<br>
+<label for="lname">Enter last name: </label>
+<input type="text" id="lname" name="lname" form="form1">
+</body>
+</html>

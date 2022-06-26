@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width:device-width, initial-scale=1">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+    }
+    .container > div{
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .left{
+        background-color: blue;
+        flex: 33%;
+    }
+    .middle{
+        background-color: aliceblue;
+        flex: 33%;
+    }
+    .right{
+        background-color: darkblue;
+        flex: 33%   ;
+    }
+
+    @media screen and (max-width:600px){
+        .container{flex-direction: column;}
+    }
+</style>
+<head>
+<body>
+    <div class="container">
+        <div class="left">1</div>
+        <div class="middle">2</div>
+        <div class="right">3</div>
+    </div>
+</body>
+</html>

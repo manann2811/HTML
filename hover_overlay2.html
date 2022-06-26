@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .container{
+        position: relative;
+        width: 25%;
+        height: auto;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        transition: opacity 0.5s ease;
+        opacity: 1;
+        display: block;
+    }
+    .container:hover img{
+        opacity: 0.3;
+    }
+    .button{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(102, 202, 102);
+        color: white;
+        text-align: center;
+        padding: 6px;
+        line-height: 30px;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .container:hover .button{
+        opacity: 1;
+    }
+</style>
+<head>
+<body>
+    <div class="container">
+        <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="avatar">   
+            <div class="button">Manan</div>
+    </div>
+</body>
+</html>

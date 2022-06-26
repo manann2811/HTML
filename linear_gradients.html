@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .top{
+        height: 200px;
+        background-image: linear-gradient(red, yellow);
+    }
+
+    .right{
+        height: 200px;
+        background-image: linear-gradient(to right, red, yellow);
+    }
+
+    .angle{
+        height: 200px;
+        background-image: linear-gradient(10deg, red, yellow);
+    }
+    
+    .even_3{
+        height: 200px;
+        background-image: linear-gradient(red, yellow, green);
+    }
+    
+    .even_7{
+        height: 200px;
+        background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+    }
+    
+    .not_even_3{
+        height: 200px;
+        background-image: linear-gradient(red 10%, yellow 30%, green 60%);
+    }
+
+    .fade{
+        height: 200px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 0, 0, 1));
+    }
+
+    .repeat{
+        height: 200px;
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    }
+</style>
+<head>
+<body>
+    <h3>Top to Bottom Gradient:</h3>
+    <div class="top"></div>
+
+    <h3>Left to Right Gradient:</h3>
+    <div class="right"></div>
+    
+    <h3>Angle Gradient:</h3>
+    <div class="angle"></div>
+    
+    <h3>3 color stops (evenly spaced):</h3>
+    <div class="even_3"></div>
+    
+    <h3>7 color stops (evenly spaced):</h3>
+    <div class="even_7"></div>
+    
+    <h3>3 color stops (not evenly spaced):</h3>
+    <div class="not_even_3"></div>
+    
+    <h3>Fading Effect:</h3>
+    <div class="fade"></div>
+    
+    <h3>Repeating linear Gradient:</h3>
+    <div class="repeat"></div>
+
+</body>
+</html>

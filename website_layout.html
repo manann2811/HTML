@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    @keyframes animate2{
+        0%{background-color: yellowgreen; left:43%;}
+        25%{transform: rotate(20deg); left: 43%;}
+        50%{transform: rotate(0deg); left: 80%; background-color: aqua;}
+        75%{transform: rotate(-360deg); left: 43%;}
+        100%{transform: rotate(-360deg); background-color: yellowgreen; left: 43%;}
+    }
+    #a3{
+        width: 150px;
+        height: 40px;
+        border-radius: 2%;
+        font-weight: bolder;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        background-color: yellowgreen;
+        animation-name: animate2;
+        animation-duration: 8s;
+        position: relative;
+        animation-fill-mode: forwards;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #cfcece;
+        padding: 10px;
+    }
+
+
+    .header{
+        background-color: white;
+        text-align: center;
+        padding: 100px;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(42, 42, 42);
+        overflow: hidden;
+    }
+
+    li{
+        float: left;
+    }
+
+    li a{
+        display: block;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover{
+        background-color: gray;
+        color: black
+    }
+
+    .left{
+        width: 75%;
+        float: left;
+    }
+
+    .right{
+        width: 25%;
+        float: left;
+        padding-left: 14px;
+    }
+
+    .card{
+        padding: 25px;
+        background-color: white;
+        margin-top: 14px;
+    }
+
+    .fakeimg{
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(131, 130, 130);
+        height: 150px;
+        font-size: large;
+    }
+
+    .footer{
+        margin-top: 14px;
+        background-color: rgb(172, 171, 171);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .row{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .link_right{
+        float: right;
+    }
+
+    @media screen and (max-width: 1000px){
+        .left, .right{
+            width: 100%;
+            padding: 0px;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        li{float: none;}
+        li a{text-align: center;}
+        .link_right{float: none;}
+    }
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <!-- <div id="a3">Hi</div> -->
+    <h1 id="a3">My Website</h1>
+    <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li class="link_right"><a href="#About">About</a></li>
+    </ul>
+    <div class="row">
+    <div class="left">
+        <div class="card">
+            <h2>TITLE HEADING</h2>
+            <p>Title description, Dec 7, 2017</p>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        
+        <div class="card">
+            <h2>TITLE HEADING</h2>
+            <p>Title description, Sep 2, 2017</p>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height: 100px;">Image</div>
+            <p>Sunt in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card">
+        <h2>Popular Post</h2>
+        <div class="fakeimg" style="height: 100px;">Image</div>
+        <div class="fakeimg" style="height: 100px;">Image</div>
+        <div class="fakeimg" style="height: 100px;">Image</div>
+        </div>
+        <div class="card">
+            <h2>Follow Me</h2>
+            <p>Some text..</p>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+</html>

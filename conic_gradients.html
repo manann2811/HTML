@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .conic_3{
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(red, yellow, green);
+    }
+    .conic_5{
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(red, yellow, green, blue, black);
+    }
+    .conic_3_degree{
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(red 10deg, yellow 90deg, green);
+    }
+    .piechart_solid{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(red 0deg, red 72deg, yellow 72deg, yellow 144deg, green 144deg, green 216deg, blue 216deg, blue 288deg, black 288deg, black 360deg);
+    }
+    .piechart{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(red, yellow, green, blue, black);
+    }
+    .from_angle{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(from 90deg, red, yellow, green);
+    }
+    .center{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(at 70% 60%, red, yellow, green);
+    }
+    .repeating{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-image: repeating-conic-gradient(red 10%, yellow 20%);
+    }
+    .solid_repeating{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg);
+    }
+</style>
+<head>
+<body>
+    <h3>3 Colors Conic Gradient:</h3>
+    <div class="conic_3"></div>
+    <h3>5 Colors Conic Gradient:</h3>
+    <div class="conic_5"></div>
+    <h3>3 Colors with degree Conic Gradient:</h3>
+    <div class="conic_3_degree"></div>
+    <h3>Pie Chart:</h3>
+    <div class="piechart"></div>
+    <h3>Pie Chart Solid:</h3>
+    <div class="piechart_solid"></div>
+    <h3>Conic Gradient from specified angle:</h3>
+    <div class="from_angle"></div>
+    <h3>Conic Gradient with specified centre:</h3>
+    <div class="center"></div>
+    <h3>Repeating Conic Gradient:</h3>
+    <div class="repeating"></div>
+    <h3>Repeating Solid Conic Gradient:</h3>
+    <div class="solid_repeating"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .center{
+        text-align: center;
+    }
+    .pagination{
+        display: inline-block;
+    }
+    .pagination a{
+        color: black;
+        text-decoration: none;
+        border: 1px solid #999;
+        padding: 10px 18px;
+        float: left;
+        font-size: 22px;
+    }
+    .pagination a:hover:not(.active){
+        background-color: rgb(197, 196, 196);
+    }
+    a.active{
+        background-color: rgb(104, 214, 104);
+        border: 1px solid rgb(104, 214, 104);
+        color: white;
+    }
+    a:first-child{
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    a:last-child{
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+</style>
+<head>
+<body>
+    <div class="center">
+    <div class="pagination">
+        <a href="#">&laquo</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo</a>
+    </div>
+    </div>
+</body>
+</html>

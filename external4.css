@@ -1,0 +1,22 @@
+div{
+    padding: 10px;
+}
+
+.div1{
+    border: 2px solid rgb(95, 216, 65);
+    float: left;
+}
+
+.div2{
+    border: 2px solid rgb(221, 55, 55);
+}
+
+.div3{
+    border: 2px solid rgb(95, 216, 65);
+    float: left;
+}
+
+.div4{
+    border: 2px solid rgb(221, 55, 55);
+    clear: left;
+}

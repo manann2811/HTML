@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .header{
+        background-color: rgb(150, 4, 155);
+        background-image: linear-gradient(to left, rgb(150, 4, 155), rgb(85, 6, 109));
+        padding: 32px;
+        font-size: 25px;
+        color: white;
+        font-family: 'Baskervville';
+    }
+    
+    [class*="col-"]{
+        float: left;
+        padding: 15px;
+    }
+
+    .col-1{ width: 8.33%;}
+    .col-2{ width: 16.66%;}
+    .col-3{ width: 25%;}
+    .col-4{ width: 33.33%;}
+    .col-5{ width: 41.66%;}
+    .col-6{ width: 50%;}
+    .col-7{ width: 58.33%;}
+    .col-8{ width: 66.66%;}
+    .col-9{ width: 75%;}
+    .col-10{ width: 83.33%;}
+    .col-11{ width: 91.66%;}
+    .col-12{ width: 100%;}
+    
+    @media screen and (max-width: 900px){
+    .col-s-1{ width: 8.33%;}
+    .col-s-2{ width: 16.66%;}
+    .col-s-3{ width: 25%;}
+    .col-s-4{ width: 33.33%;}
+    .col-s-5{ width: 41.66%;}
+    .col-s-6{ width: 50%;}
+    .col-s-7{ width: 58.33%;}
+    .col-s-8{ width: 66.66%;}
+    .col-s-9{ width: 75%;}
+    .col-s-10{ width: 83.33%;}
+    .col-s-11{ width: 91.66%;}
+    .col-s-12{ width: 100%;}
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li{
+        background-color: rgb(0, 132, 255);
+        padding: 12px 20px;
+        color: white;
+        margin: 8px 0px;
+        font-size: 20px;
+        box-shadow: 0px 1px rgb(0, 0, 0, 0.2),  0px 2px rgb(0, 0, 0, 0.19);
+    }
+
+    ul li:hover{
+        background-color: rgb(1, 111, 214);
+    }
+
+    .main{
+        padding: 12px;
+        font-size: 20px;
+    }
+    .aside{
+        background-color: rgb(0, 132, 255);
+        color: white;
+        margin-top: 16px;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .footer{
+        background-color: rgb(0, 107, 207);
+        padding: 20px;
+        margin-top: 16px;
+        color: white;
+        text-align: center;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 600px){
+       [class*="col-"]{width: 100%;}
+    }
+</style>
+<head>
+<body>
+    <div class="header">Mussoorie</div>
+    <div class="row">
+    <div class="col-3 col-s-3">
+        <ul>
+            <li>The Flight</li>
+            <li>The Station</li>
+            <li>The Food</li>
+            <li>The Property</li>
+        </ul>
+    </div>
+    <div class="col-6 main col-s-9">
+        <h2>The Hill Station</h2>
+        <p>Mussoorie is a hill station and a municipal board in the Dehradun district of the Indian state of Uttarakhand. It is about 35 kilometres from the state capital of Dehradun and 290 km north of the national capital of New Delhi. The hill station is in the foothills of the Garhwal Himalayan range.</p>
+        <img src="https://uttarakhandtourism.gov.in/sites/default/files/2021-09/6.Mussoorie.jpg" alt="Image">
+    </div>
+    <div class="col-3 col-s-12">
+        <div class="aside">
+        <h3>Plan a trip</h3>
+        <p>Things to do</p>
+        <p>3-star hotel averaging ₹2,596</p>
+        <p>5-star hotel averaging ₹17,934</p>
+        <p>1 h 20 min flight, from ₹4,132</p>
+        <p>Neighborhoods: Library Bazar, Defence Colony, Sri Nagar Estate, Jhula Ghar, Luxmanpuri, Kitab Ghar, Jabarkhet, Library</p>
+        <p>University: Lal Bahadur Shastri National Academy Of Administration</p></p>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>    
+    </div>
+</body>
+</html>

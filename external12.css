@@ -1,0 +1,21 @@
+div.gallery{
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 6px;
+    float: left;
+}
+
+.desc{
+    padding: 16px;
+    text-align: center;
+    font-size: large;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+div.gallery:hover{
+    border: 1.2px solid rgba(0, 0, 0, 1);
+}

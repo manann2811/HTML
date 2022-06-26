@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1;">
+<style>
+    :root{
+        --blue: #008CBA;
+        --green: #4CAF50;
+    }
+    h1{
+        --button-blue: #0000ff;
+        font-size: 20px;
+        color: var(--blue);
+        padding: 20px;
+        background-color: var(--button-blue);
+    }
+    span{
+        --blue: #ff0000;
+        background-color: var(--green);
+        padding: 20px;
+        color: var(--blue);
+    }
+    @media screen and (max-width:1000px){
+        h1{background-color: var(--green);}
+    }
+</style>
+<head>
+<body>
+    <h1>Hello</h1>
+    <span>Coder!</span>
+</body>
+</html>

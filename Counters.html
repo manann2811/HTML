@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        counter-reset: section;
+    }
+
+    h2::before{
+        counter-increment: section;
+        content: "Section " counter(section) ": ";
+    }
+</style>
+</head>
+<body>
+    <h2>Hello</h2>
+    <h2>Lion</h2>
+    <h2>Penguin</h2>
+    <h2>Peacock</h2>
+    <h2>Tiger</h2>
+    <h2>Elephant</h2>
+</body>
+</html>

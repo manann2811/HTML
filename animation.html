@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    @keyframes animate{
+        from{background-color: red;}
+        to{background-color: yellow;}
+    }
+    #a1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: animate;
+        animation-duration: 4s;
+        animation-delay: 2s;
+    }
+    @keyframes animate1{
+        0%{background-color: red;}
+        50%{background-color: yellow;}
+        100%{background-color: red;}
+    }
+    #a2{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: animate1;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        text-align: center;
+        line-height: 600%;
+    }
+    @keyframes animate2{
+        0%{background-color: red; left: 0px; top: 40px;}
+        25%{background-color: yellow; left: 300px; top: 100px;}
+        50%{background-color: blue; left: 500px; top: 200px;}
+        75%{background-color: green; left: 100px; top: 200px;}
+        100%{background-color: red; left: 0px; top: 40px;}
+    }
+    #a3{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: animate2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    @keyframes animate3{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 200px; top: 0px;}
+        50%{background-color: blue; left: 200px; top: 200px;}
+        75%{background-color: green; left: 0px; top: 200px;}
+        100%{background-color: red; left: 0px; top: 0px;}
+    }
+    #a4{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        animation-name: animate3;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        position: relative;
+        animation-direction: alternate;
+        animation-delay: 4s;
+        animation-fill-mode: both;
+    }
+</style>
+<head>
+<body>
+    <div id="a1"></div><br><br>
+    <div id="a2">Alert</div><br><br>
+    <div id="a3"></div>
+    <div id="a4"></div>
+
+    <!--div {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#Shorthand
+
+div {
+  animation: example 5s linear 2s infinite alternate;
+}
+-->
+</body>
+</html>

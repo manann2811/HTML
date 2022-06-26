@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .overflow{
+        white-space: nowrap;
+        width: 200px;
+        border: 1px solid black;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    .overflow_2{
+        white-space: nowrap;
+        width: 200px;
+        border: 1px solid black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .overflow_hover{
+        white-space: nowrap;
+        width: 200px;
+        border: 1px solid black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .overflow_hover:hover{
+        overflow: visible;
+        width: 600px;
+    }
+    .wordwrap{
+        width: 140px;
+        border: 1px solid black;
+        word-wrap: break-word;
+    }
+    .keepall{
+        word-break: keep-all;
+        border: 1px solid black;
+        width: 140px;
+    }
+    .breakall{
+        word-break: break-all;
+        border: 1px solid black;
+        width: 140px;
+    }
+    .writing_mode_htb{
+        writing-mode: horizontal-tb;
+    }
+    .writing_mode_vlr{
+        writing-mode: vertical-lr;
+    }
+    .writing_mode_vrl{
+        writing-mode: vertical-rl;
+    }
+    .writing_mode_slr{
+        writing-mode: sideways-lr;
+    }
+    .writing_mode_srl{
+        writing-mode: sideways-rl;
+    }
+</style>
+<head>
+<body>
+    <h3>Text overflow:</h3>
+    <p class="overflow">The following example shows how you can display the overflowed content when hovering </p>
+    <p class="overflow_2">The following example shows how you can display the overflowed content when hovering </p>
+    <p class="overflow_hover">The following example shows how you can display the overflowed content when hovering </p>
+    <h3>Word Wrap:</h3>
+    <p class="wordwrap">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+    <h3>Word Break:</h3>
+    <p class="keepall">This paragraph contains some text. This line will-break-at-hyphens.</p>
+    <p class="breakall">This paragraph contains some text. The lines will break at any character.</p>
+    <p>Writing mode is <span class="writing_mode_htb">horizontal-tb</span></p>
+    <p>Writing mode is <span class="writing_mode_vlr">vertical-lr</span></p>
+    <p>Writing mode is <span class="writing_mode_vrl">vertical-rl</span></p>
+    <p>Writing mode is <span class="writing_mode_slr">sideways-lr</span></p>
+    <p>Writing mode is <span class="writing_mode_srl">sideways-rl</span></p>
+</body>
+</html>
